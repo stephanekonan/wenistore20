@@ -27,9 +27,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/uikit/dist/css/uikit.min.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/uikit/dist/js/uikit.min.js",
+              "node_modules/uikit/dist/js/uikit-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,6 +102,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "wenistore20:build:production",
+            "firebaseProject": "wenistore-4d599",
+            "firebaseHostingSite": "wenistore-4d599"
           }
         }
       }

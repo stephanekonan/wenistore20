@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wenistore-4d599": {
+      "hosting": {
+        "wenistore20": [
+          "wenistore-4d599"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wenistore-4d599"
+  }
+}

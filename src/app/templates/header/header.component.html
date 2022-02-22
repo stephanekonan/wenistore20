@@ -1,0 +1,71 @@
+<div class="navbar">
+  <div class="uk-hidden@s responsive-navbar">
+      <div class="uk-inline">
+          <button class="uk-button menu" uk-toggle="target: #offcanvas-push" type="button"><span uk-icon="icon: more-vertical"></span><b>Categories</b></button>
+          <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+              <div class="uk-offcanvas-bar">
+                  <button class="uk-offcanvas-close" type="button" uk-close></button>
+                  <h3>Catégories</h3>
+                  <div class="categories">
+                      <div class="links">
+                        <a href="/vetements"> <span>Vêtements</span></a>
+                        <a href="/pharmacie"><span>Pharmacie</span></a>
+                        <a href="/Sport"> <span>Sport</span></a>
+                        <a href="/supermarket"> <span>Supermarché</span></a>
+                        <a href="/electronique"> <span>Electrcité</span> </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <a href="/">  <img src="assets/img/logo-weni.png" class="nav-left" alt=""> </a>
+  <div class="uk-margin nav-center">
+      <div class="uk-inline">
+          <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+          <input class="uk-input uk-" placeholder="Recheche..." type="text">
+      </div>
+  </div>
+  <div class="responsive uk-hidden@m">
+
+      <div class="uk-inline uk-margin-remove">
+          <button class="uk-button btn-search" type="button"><span uk-icon="icon: search"></span></button>
+          <div class="responsive-search" uk-drop="mode: click; pos: bottom-right">
+              <a href="#" class="search">
+                  <input class="uk-input" placeholder="Recheche..." type="text">
+                  <button type="submit">Rechercher</button>
+              </a>
+          </div>
+      </div>
+      <div class="uk-inline">
+          <button class="uk-button menu" type="button"><span uk-icon="icon: menu"></span></button>
+          <div class="responsive-menu" uk-drop="mode: click; pos: bottom-center">
+              <a routerLink="/login" class="user">
+                  <div>Mon compte</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                  </svg>
+              </a><hr>
+              <a href="/commandes" class="shopping">
+                  <div>Commandes</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="nav-right">
+      <a routerLink="/login" class="user">
+          <div>Mon compte</div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+          </svg>
+      </a>
+      <a href="/commandes" class="shopping">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      </a>
+  </div>
+</div>
